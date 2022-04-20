@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php 
 include 'header.php';
 ?>
@@ -12,12 +13,32 @@ if(isset($_GET['pesan'])){
 	}else if($pesan=="tdksama"){
 		echo "<div class='alert alert-warning'>Password yang anda masukkan tidak sesuai  !!     silahkan ulangi !! </div>";
 	}else if($pesan=="oke"){
+=======
+<?php
+include 'header.php';
+?>
+
+<h3><span class="glyphicon glyphicon-briefcase"></span> Password</h3>
+<br /><br />
+<?php
+if (isset($_GET['pesan'])) {
+	$pesan = mysqli_real_escape_string($conn, $_GET['pesan']);
+	if ($pesan == "gagal") {
+		echo "<div class='alert alert-danger'>Password gagal di ganti !!     Periksa Kembali Password yang anda masukkan !!</div>";
+	} else if ($pesan == "tdksama") {
+		echo "<div class='alert alert-warning'>Password yang anda masukkan tidak sesuai  !!     silahkan ulangi !! </div>";
+	} else if ($pesan == "oke") {
+>>>>>>> 5d351b0fbd5cbf696368bbe11b18fc04aef15634
 		echo "<div class='alert alert-success'>Password yang anda masukkan tidak sesuai  !!     silahkan ulangi !! </div>";
 	}
 }
 ?>
 
+<<<<<<< HEAD
 <br/>
+=======
+<br />
+>>>>>>> 5d351b0fbd5cbf696368bbe11b18fc04aef15634
 <div class="col-md-5 col-md-offset-3">
 	<form action="ganti_pass_act.php" method="post">
 		<div class="form-group">
@@ -34,17 +55,29 @@ if(isset($_GET['pesan'])){
 		<div class="form-group">
 			<label>Ulangi Password</label>
 			<input name="ulang" type="password" class="form-control" placeholder="Ulangi Password ..">
+<<<<<<< HEAD
 		</div>	
+=======
+		</div>
+>>>>>>> 5d351b0fbd5cbf696368bbe11b18fc04aef15634
 		<div class="form-group">
 			<label></label>
 			<input type="submit" class="btn btn-info" value="Simpan">
 			<input type="reset" class="btn btn-danger" value="reset">
+<<<<<<< HEAD
 		</div>																	
+=======
+		</div>
+>>>>>>> 5d351b0fbd5cbf696368bbe11b18fc04aef15634
 	</form>
 </div>
 
 
+<<<<<<< HEAD
 <?php 
+=======
+<?php
+>>>>>>> 5d351b0fbd5cbf696368bbe11b18fc04aef15634
 include 'footer.php';
 
 ?>
