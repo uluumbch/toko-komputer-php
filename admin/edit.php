@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php 
 include 'header.php';
 ?>
@@ -8,6 +9,18 @@ $id_brg=mysql_real_escape_string($_GET['id']);
 $det=mysql_query("select * from barang where id='$id_brg'")or die(mysql_error());
 while($d=mysql_fetch_array($det)){
 ?>					
+=======
+<?php
+include 'header.php';
+?>
+<h3><span class="glyphicon glyphicon-briefcase"></span> Edit Barang</h3>
+<a class="btn" href="barang.php"><span class="glyphicon glyphicon-arrow-left"></span> Kembali</a>
+<?php
+$id_brg = mysqli_real_escape_string($conn, $_GET['id']);
+$det = mysqli_query($conn, "select * from barang where id='$id_brg'") or die(mysqli_error($conn));
+while ($d = mysqli_fetch_array($det)) {
+?>
+>>>>>>> 5d351b0fbd5cbf696368bbe11b18fc04aef15634
 	<form action="update.php" method="post">
 		<table class="table">
 			<tr>
@@ -44,7 +57,11 @@ while($d=mysql_fetch_array($det)){
 			</tr>
 		</table>
 	</form>
+<<<<<<< HEAD
 	<?php 
+=======
+<?php
+>>>>>>> 5d351b0fbd5cbf696368bbe11b18fc04aef15634
 }
 ?>
 <?php include 'footer.php'; ?>
