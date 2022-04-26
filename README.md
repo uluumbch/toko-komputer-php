@@ -16,3 +16,5 @@ Buka url pada : `localhost/kios`
 Username : admin
 
 Password : admin
+
+bela
