@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `malasngoding_kios`
+-- Database: `kios`
 --
 
 -- --------------------------------------------------------
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`id`, `uname`, `pass`, `foto`) VALUES
-(8, 'malasngoding', '069c546d1d97fd9648d8142b3e0fd3a3', 'text.png');
+(8, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'text.png');
 
 -- --------------------------------------------------------
 

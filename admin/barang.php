@@ -24,7 +24,7 @@ while ($q = mysqli_fetch_array($periksa)) {
 <?php
 $per_hal = 10;
 $jumlah_record = mysqli_query($conn, "SELECT COUNT(*) from barang");
-$jum = $jumlah_record;
+$jum = $jumlah_record->fetch_row()[0];
 $halaman = ceil($jum / $per_hal);
 $page = (isset($_GET['page'])) ? (int)$_GET['page'] : 1;
 $start = ($page - 1) * $per_hal;

@@ -7,7 +7,7 @@
 	include 'cek.php';
 	include 'config.php';
 	?>
-	<title>KIOS MALASNGODING</title>
+	<title>KIOS</title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../assets/js/jquery-ui/jquery-ui.css">
 	<script type="text/javascript" src="../assets/js/jquery.js"></script>
@@ -20,7 +20,7 @@
 	<div class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="#" class="navbar-brand">KIOS MALASNGODING</a>
+				<a href="#" class="navbar-brand">KIOS</a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -73,7 +73,7 @@
 
 				<div class="col-xs-6 col-md-12">
 					<a class="thumbnail">
-						<img class="img-responsive" src="foto/<?php echo $f['foto']; ?>">
+						<img class="img-responsive" src="foto/text.png">
 					</a>
 				</div>
 			<?php
